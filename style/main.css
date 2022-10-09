@@ -1,0 +1,181 @@
+:root {
+    --primary-color:hsl(178, 100%, 50%);
+    --secondary-color:hsl(215, 51%, 70%);
+    --background-color: #0D192C;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--background-color);
+}
+
+/*
+    Color - Styling
+*/
+.soft-blue {
+    color: var(--secondary-color);
+}
+.cyan{
+    color:var(--primary-color);
+}
+.white{
+    color:#FFFFFF
+}
+
+/*
+    Image
+*/
+
+.nft-image-contianer {
+    position:relative;
+}
+
+.nft-image-contianer:hover {
+    cursor: pointer;
+}
+
+.nft-img {
+    width: 302px; 
+    height:302px; 
+    margin:0 auto;
+    display:block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    transition: all 0.5s ease-out;
+}
+
+.nft-image-contianer:hover .overlay {
+    background-color: var( --primary-color);
+    opacity: 0.5;
+}
+
+.eye-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+.nft-image-contianer:hover .eye-icon {
+    opacity: 1;
+}
+
+.avatar {
+    width:33px; 
+    height:33px
+}
+
+/*
+    Title & Font
+*/
+.nft-title {
+    font-size: 22px;
+    font-weight:600
+}
+
+@media (max-width:768px) {
+    .nft-title {
+        margin-top:24px;
+    }
+}
+
+.context {
+    font-size: 18px;
+    color: var(--secondary-color);
+    margin: 0px;
+    margin-bottom: 24px;
+}
+
+@media (max-width:768px) {
+    .context {
+        width: 80%;
+        margin-bottom: 16px;
+    }
+}
+
+/*
+    Alignment
+*/
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.container {
+    width:350px;
+    height: 610px; 
+    background-color: 
+    hsl(216, 50%, 16%);
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 152px;
+}
+
+@media (max-width:768px) {
+    .container {
+        height: 596px; 
+        margin-top: 62px;
+    }
+}
+
+.align-container {
+    padding: 24px 24px
+}
+.align-group {
+    display: flex; 
+    gap:6.48px; 
+    align-items: center;
+}
+
+.align-subgroup{
+    display: flex; 
+    justify-content: space-between;
+}
+.align-avatar{
+    display: flex; 
+    align-items: center; 
+    gap:16px; 
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+@media (max-width:768px) {
+    .align-avatar {
+        margin-bottom: 24px;
+    }
+}
+.align-margin {
+    margin-right: 5px;
+}
+
+/*
+    Extra
+*/
+
+.hr { 
+    background-color: 
+    hsl(215, 32%, 27%); 
+    height: 1px; 
+    border: none;
+}
+
+/*
+    Functionality & Animation
+*/
+
+.hover-effect:hover { 
+    cursor: pointer; 
+    color:var(--primary-color);
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
